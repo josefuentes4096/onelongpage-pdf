@@ -1,0 +1,81 @@
+{
+  "extName": { "message": "OneLongPage PDF" },
+  "extDescription": {
+    "message": "Save web pages as a single continuous PDF page, with no page breaks, stamped with the URL and capture time."
+  },
+  "actionTitle": { "message": "Single-page PDF" },
+  "commandCapturePage": { "message": "Save the current page as a single-page PDF" },
+  "contextMenuCapturePage": { "message": "Save page as a single-page PDF" },
+
+  "popupTitle": { "message": "Single-page PDF" },
+  "popupCapture": { "message": "Capture this page" },
+  "popupHeaderNote": {
+    "message": "The PDF includes a header with the URL and the capture date and time."
+  },
+  "popupOptions": { "message": "Options" },
+  "popupPaperWidth": { "message": "Paper width" },
+  "paperA4": { "message": "A4 (210 mm)" },
+  "paperLetter": { "message": "Letter (216 mm)" },
+  "paperA3": { "message": "A3 (297 mm)" },
+  "paperA5": { "message": "A5 (148 mm)" },
+  "paperNarrow": { "message": "Narrow / mobile (100 mm)" },
+  "popupMargin": { "message": "Margin (mm)" },
+  "popupBackground": { "message": "Print backgrounds and colors" },
+  "popupLoadLazy": { "message": "Load lazy images (scrolls the page)" },
+  "popupHideOverlays": { "message": "Hide cookie banners and pop-ups" },
+  "popupSaveAs": { "message": "Ask where to save" },
+  "popupShortcutLabel": { "message": "Shortcut:" },
+  "popupShortcutUnassigned": { "message": "not set" },
+  "popupChangeShortcut": { "message": "Change shortcut" },
+  "statusWorking": { "message": "Generating PDF…" },
+  "statusDone": {
+    "message": "Done: 1 page, $HEIGHT$ cm tall.",
+    "placeholders": { "height": { "content": "$1" } }
+  },
+
+  "badgeErrorTitle": {
+    "message": "Error: $MESSAGE$",
+    "placeholders": { "message": { "content": "$1" } }
+  },
+  "errorRestrictedPage": {
+    "message": "Chrome doesn't allow extensions on this page (chrome:// pages, Chrome Web Store, PDF viewer, etc.)."
+  },
+  "errorDevtoolsOpen": { "message": "Close DevTools on this tab and try again." },
+  "errorBusy": { "message": "A capture is already running on this tab." },
+  "errorCanceled": { "message": "The capture was canceled." },
+  "errorNoTab": { "message": "The tab could not be found." },
+  "errorTooTall": {
+    "message": "The content is about $METERS$ m tall, and Chrome doesn't support pages taller than about 23 m. Try a wider paper size (A3).",
+    "placeholders": { "meters": { "content": "$1" } }
+  },
+  "errorPageScript": {
+    "message": "The page could not be prepared for capture: $DETAILS$",
+    "placeholders": { "details": { "content": "$1" } }
+  },
+  "errorUnknown": {
+    "message": "Unexpected error: $DETAILS$",
+    "placeholders": { "details": { "content": "$1" } }
+  },
+
+  "resultTitle": { "message": "Generated PDF" },
+  "resultDownload": { "message": "Download PDF" },
+  "resultPreview": { "message": "PDF preview" },
+  "resultInfo": {
+    "message": "1 page · $HEIGHT$ cm tall · $SIZE$ KB · captured $DATE$",
+    "placeholders": {
+      "height": { "content": "$1" },
+      "size": { "content": "$2" },
+      "date": { "content": "$3" }
+    }
+  },
+  "resultUnavailable": {
+    "message": "This PDF is no longer available. Capture the page again from the extension."
+  },
+  "resultDownloadFailed": {
+    "message": "The download failed: $DETAILS$",
+    "placeholders": { "details": { "content": "$1" } }
+  },
+
+  "headerUrl": { "message": "URL" },
+  "headerCaptured": { "message": "Captured" }
+}

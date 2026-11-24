@@ -1,0 +1,8 @@
+.row {
+  box-sizing: border-box;
+  height: 40px;
+  margin: 0;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  font: 14px/40px sans-serif;
+}

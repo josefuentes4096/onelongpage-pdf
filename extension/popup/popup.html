@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="popup.css" />
+    <script type="module" src="popup.js"></script>
+  </head>
+  <body>
+    <h1 data-i18n="popupTitle"></h1>
+
+    <button id="capture" type="button" class="primary" data-i18n="popupCapture"></button>
+    <p class="note" data-i18n="popupHeaderNote"></p>
+
+    <fieldset>
+      <legend data-i18n="popupOptions"></legend>
+      <label>
+        <span data-i18n="popupPaperWidth"></span>
+        <select id="paperWidthMm">
+          <option value="210" data-i18n="paperA4"></option>
+          <option value="216" data-i18n="paperLetter"></option>
+          <option value="297" data-i18n="paperA3"></option>
+          <option value="148" data-i18n="paperA5"></option>
+          <option value="100" data-i18n="paperNarrow"></option>
+        </select>
+      </label>
+      <label>
+        <span data-i18n="popupMargin"></span>
+        <input id="marginMm" type="number" min="0" max="50" step="1" />
+      </label>
+      <label class="check"
+        ><input id="background" type="checkbox" /> <span data-i18n="popupBackground"></span
+      ></label>
+      <label class="check"
+        ><input id="loadLazy" type="checkbox" /> <span data-i18n="popupLoadLazy"></span
+      ></label>
+      <label class="check"
+        ><input id="hideOverlays" type="checkbox" /> <span data-i18n="popupHideOverlays"></span
+      ></label>
+      <label class="check"><input id="saveAs" type="checkbox" /> <span data-i18n="popupSaveAs"></span></label>
+    </fieldset>
+
+    <p id="status" role="status" aria-live="polite"></p>
+    <p class="hint">
+      <span id="shortcut"></span> ·
+      <a href="#" id="changeShortcut" data-i18n="popupChangeShortcut"></a>
+    </p>
+  </body>
+</html>

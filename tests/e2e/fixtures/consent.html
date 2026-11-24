@@ -1,0 +1,30 @@
+<!doctype html>
+<!-- A cookie dialog that locks scrolling on <body>. -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Consent dialog</title>
+    <link rel="stylesheet" href="common.css" />
+    <script src="common.js"></script>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        height: 100vh;
+      }
+      .consent {
+        position: fixed;
+        inset: 0;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.6);
+      }
+    </style>
+  </head>
+  <body>
+    <main id="content"></main>
+    <div class="consent" role="dialog" aria-modal="true">We use cookies. <button>Accept</button></div>
+    <script>
+      addParagraphs(document.getElementById('content'), 300);
+    </script>
+  </body>
+</html>

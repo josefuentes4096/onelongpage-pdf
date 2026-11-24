@@ -1,0 +1,81 @@
+{
+  "extName": { "message": "OneLongPage PDF" },
+  "extDescription": {
+    "message": "Guarda páginas web en un PDF de una sola página continua, sin cortes, con la URL y la fecha/hora de la captura."
+  },
+  "actionTitle": { "message": "PDF de una sola página" },
+  "commandCapturePage": { "message": "Guardar la página actual como PDF de una sola página" },
+  "contextMenuCapturePage": { "message": "Guardar página como PDF de una sola página" },
+
+  "popupTitle": { "message": "PDF de una sola página" },
+  "popupCapture": { "message": "Capturar esta página" },
+  "popupHeaderNote": {
+    "message": "El PDF incluye una cabecera con la URL y la fecha/hora de la captura."
+  },
+  "popupOptions": { "message": "Opciones" },
+  "popupPaperWidth": { "message": "Ancho del papel" },
+  "paperA4": { "message": "A4 (210 mm)" },
+  "paperLetter": { "message": "Carta (216 mm)" },
+  "paperA3": { "message": "A3 (297 mm)" },
+  "paperA5": { "message": "A5 (148 mm)" },
+  "paperNarrow": { "message": "Estrecho / móvil (100 mm)" },
+  "popupMargin": { "message": "Margen (mm)" },
+  "popupBackground": { "message": "Imprimir fondos y colores" },
+  "popupLoadLazy": { "message": "Cargar imágenes diferidas (desplaza la página)" },
+  "popupHideOverlays": { "message": "Ocultar avisos de cookies y ventanas emergentes" },
+  "popupSaveAs": { "message": "Preguntar dónde guardar" },
+  "popupShortcutLabel": { "message": "Atajo:" },
+  "popupShortcutUnassigned": { "message": "sin asignar" },
+  "popupChangeShortcut": { "message": "Cambiar atajo" },
+  "statusWorking": { "message": "Generando PDF…" },
+  "statusDone": {
+    "message": "Listo: 1 página de $HEIGHT$ cm de alto.",
+    "placeholders": { "height": { "content": "$1" } }
+  },
+
+  "badgeErrorTitle": {
+    "message": "Error: $MESSAGE$",
+    "placeholders": { "message": { "content": "$1" } }
+  },
+  "errorRestrictedPage": {
+    "message": "Chrome no permite usar extensiones en esta página (páginas chrome://, Chrome Web Store, visor de PDF, etc.)."
+  },
+  "errorDevtoolsOpen": { "message": "Cierra DevTools en esta pestaña e inténtalo de nuevo." },
+  "errorBusy": { "message": "Ya hay una captura en curso en esta pestaña." },
+  "errorCanceled": { "message": "Se canceló la captura." },
+  "errorNoTab": { "message": "No se encontró la pestaña." },
+  "errorTooTall": {
+    "message": "El contenido mide unos $METERS$ m de alto y Chrome no admite páginas de más de unos 23 m. Prueba con un papel más ancho (A3).",
+    "placeholders": { "meters": { "content": "$1" } }
+  },
+  "errorPageScript": {
+    "message": "No se pudo preparar la página para la captura: $DETAILS$",
+    "placeholders": { "details": { "content": "$1" } }
+  },
+  "errorUnknown": {
+    "message": "Error inesperado: $DETAILS$",
+    "placeholders": { "details": { "content": "$1" } }
+  },
+
+  "resultTitle": { "message": "PDF generado" },
+  "resultDownload": { "message": "Descargar PDF" },
+  "resultPreview": { "message": "Vista previa del PDF" },
+  "resultInfo": {
+    "message": "1 página · $HEIGHT$ cm de alto · $SIZE$ KB · capturado $DATE$",
+    "placeholders": {
+      "height": { "content": "$1" },
+      "size": { "content": "$2" },
+      "date": { "content": "$3" }
+    }
+  },
+  "resultUnavailable": {
+    "message": "Este PDF ya no está disponible. Vuelve a capturar la página desde la extensión."
+  },
+  "resultDownloadFailed": {
+    "message": "La descarga falló: $DETAILS$",
+    "placeholders": { "details": { "content": "$1" } }
+  },
+
+  "headerUrl": { "message": "URL" },
+  "headerCaptured": { "message": "Capturado" }
+}

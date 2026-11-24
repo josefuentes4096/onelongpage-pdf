@@ -1,0 +1,38 @@
+<!doctype html>
+<!-- Worst case: an app shell whose content area is an iframe, and the
+     iframe's document is itself an app with an inner scroll container. -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Iframe with inner scroll</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+      .app {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      header {
+        height: 56px;
+        flex: none;
+      }
+      iframe {
+        flex: 1 1 0;
+        min-height: 0;
+        width: 100%;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <header>Portal</header>
+      <iframe src="inner-scroll.html"></iframe>
+    </div>
+  </body>
+</html>

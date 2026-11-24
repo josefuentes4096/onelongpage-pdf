@@ -1,0 +1,45 @@
+<!doctype html>
+<!-- Lazy loading inside an inner scroll container (window never scrolls). -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Lazy inner</title>
+    <link rel="stylesheet" href="common.css" />
+    <script src="common.js"></script>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+      #scroller {
+        height: 100%;
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="scroller">
+      <main id="content"></main>
+      <div id="sentinel" style="height: 1px"></div>
+    </div>
+    <script>
+      const content = document.getElementById('content');
+      let loaded = 0;
+      const load = () => {
+        addParagraphs(content, 100, loaded);
+        loaded += 100;
+      };
+      load();
+      new IntersectionObserver(
+        (entries, observer) => {
+          if (!entries[0].isIntersecting) return;
+          load();
+          if (loaded >= 300) observer.disconnect();
+        },
+        { root: document.getElementById('scroller') },
+      ).observe(document.getElementById('sentinel'));
+    </script>
+  </body>
+</html>

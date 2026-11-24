@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+*.zip
+*.crx
+*.pem
+
+# Local script with personal paths
+SET_PATH.cmd
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

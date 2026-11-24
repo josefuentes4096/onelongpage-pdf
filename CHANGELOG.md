@@ -5,6 +5,8 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/). E
 
 ## [Sin publicar]
 
+## [1.4.0] - 2026-11-24
+
 ### Cambiado
 
 - El proyecto pasa a llamarse **OneLongPage PDF** (antes "PDF Página Infinita").

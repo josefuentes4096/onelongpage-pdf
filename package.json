@@ -1,6 +1,6 @@
 {
   "name": "onelongpage-pdf",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "private": true,
   "description": "Chrome extension that saves a whole web page as one continuous PDF page, stamped with the URL and capture time.",
   "keywords": [
